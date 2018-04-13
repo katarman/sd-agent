@@ -36,7 +36,7 @@ class IO(Check):
         Check.__init__(self, logger)
         self.header_re = re.compile(r'([%\\/\-_a-zA-Z0-9]+)[\s+]?')
         self.item_re = re.compile(r'^([\-a-zA-Z0-9\/]+)')
-        self.value_re = re.compile(r'\d+\.\d+')
+        self.value_re = re.compile(r'\d+\.\d+|\d+\,\d+')
 
     def _parse_linux2(self, output):
         recentStats = output.split('Device:')[2].split('\n')
