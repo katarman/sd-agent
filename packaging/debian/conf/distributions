@@ -1,0 +1,29 @@
+Origin: Server Density Ltd.
+Label: Server Density Debian packages - Wheezy
+Suite: wheezy
+Codename: wheezy
+Version: 5.0
+Architectures: i386 amd64
+Components: main
+Description: Server Density Debian packages - Wheezy
+SignWith: 131EFC09
+
+Origin: Server Density Ltd.
+Label: Server Density Debian packages - Jessie
+Suite: jessie
+Codename: jessie
+Version: 5.0
+Architectures: i386 amd64
+Components: main
+Description: Server Density Debian packages - Jesssie
+SignWith: 131EFC09
+
+Origin: Server Density Ltd.
+Label: Server Density Debian packages - Stretch
+Suite: stretch
+Codename: stretch
+Version: 5.0
+Architectures: i386 amd64
+Components: main
+Description: Server Density Debian packages - Stretch
+SignWith: 131EFC09

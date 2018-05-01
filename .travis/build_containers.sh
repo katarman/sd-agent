@@ -22,8 +22,13 @@ do
     if [ ! -f "$docker_cache"  ]; then
         cd "$distro"
         docker build -t serverdensity:"${container_name}" .
+        if [[ "$distro" == "bionic" ]]; then
+            docker run --volume="${TRAVIS_BUILD_DIR}":/sd-agent:rw --volume=/packages:/packages:rw --privileged serverdensity:bionic
+            docker commit --change='CMD ["/entrypoint.sh"]' $(docker ps -a | grep serverdensity:bionic | awk '{print $1}') serverdensity:bionic
+        fi
         cd ..
         docker save serverdensity:${container_name} | gzip > "$docker_cache"
     fi
     echo -en "travis_fold:end:build_${container_name}_container\\r"
 done
+

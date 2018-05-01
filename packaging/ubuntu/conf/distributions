@@ -1,9 +1,39 @@
 Origin: Server Density Ltd.
-Label: Server Density
+Label: Server Density packages - Deprecated
 Suite: stable
 Codename: all
 Version: 5.0
 Architectures: i386 amd64 armel armhf
 Components: main
-Description: Server Density packages
+Description: Server Density packages - Deprecated
+SignWith: 131EFC09
+
+Origin: Server Density Ltd.
+Label: Server Density Ubuntu packages - Trusty
+Suite: trusty
+Codename: trusty
+Version: 5.0
+Architectures: i386 amd64
+Components: main
+Description: Server Density Ubuntu packages - Trusty
+SignWith: 131EFC09
+
+Origin: Server Density Ltd.
+Label: Server Density
+Suite: xenial
+Codename: xenial
+Version: 5.0
+Architectures: i386 amd64
+Components: main
+Description: Server Density Ubuntu packages - Xenial
+SignWith: 131EFC09
+
+Origin: Server Density Ltd.
+Label: Server Density
+Suite: bionic
+Codename: bionic
+Version: 5.0
+Architectures: i386 amd64
+Components: main
+Description: Server Density Ubuntu packages - Bionic
 SignWith: 131EFC09
